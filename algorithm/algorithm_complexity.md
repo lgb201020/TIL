@@ -8,7 +8,7 @@
 ## 빅오표기법(Big-O notation)
 - 가장 빠르게 증가하는 항만을 고려하는 표기법으로 계수는 무시한다.
 - 예를 들어 연산 횟수가 $3N^3 + 5N^2 + 1,000,000$인 경우 빅오 표기법에서는 가장 차수가 큰 항만 남기고 계수는 무시하므로 $O(N^3)$로 표현된다.
-![다양한 빅오 표기법](https://github.com/KJH622/TIL/raw/main/algorithm/img/outline/outline_02.png)
+![다양한 빅오 표기법](https://github.com/lgb201020/TIL/blob/main/algorithm/img/Big-O.png)
 
 ## 시간 복잡도 계산
 - N개의 데이터 합을 계산하는 경우
@@ -63,7 +63,7 @@
   strat_time = time.time()
   
   # 프로그램 소스코드
-  
+
   end_time = time.time()
   print("time:", end_time - strat_time) # 코드 수행 시간 출력
   ```
