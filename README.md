@@ -8,5 +8,8 @@
 # 분류
 ## 파이썬 문법
 - [자료형](https://github.com/lgb201020/TIL/blob/main/python_grammer/data_type.md)
+- [리스트 자료형](https://github.com/lgb201020/TIL/blob/main/python_grammer/list.md)
+
+
 ## Algorithm
 - [알고리즘 성능 평가](https://github.com/lgb201020/TIL/blob/main/algorithm/algorithm_complexity.md)
