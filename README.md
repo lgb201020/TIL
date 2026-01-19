@@ -15,6 +15,7 @@
 - [조건문](https://github.com/lgb201020/TIL/blob/main/python_grammer/conditional_statement.md)
 - [반복문](https://github.com/lgb201020/TIL/blob/main/python_grammer/loop_statement.md)
 - [함수](https://github.com/lgb201020/TIL/blob/main/python_grammer/function%2C%20lamda.md)
+- [실전에서 유용한 표준 라이브러리](https://github.com/lgb201020/TIL/blob/main/python_grammer/standard_library.md)
 
 ## Algorithm
 - [알고리즘 성능 평가](https://github.com/lgb201020/TIL/blob/main/algorithm/algorithm_complexity.md)
