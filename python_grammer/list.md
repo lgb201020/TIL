@@ -62,7 +62,7 @@
   ```
 
 ## 리스트 관련 주요 메서드
-![리스트 주요 메서드](https://github.com/KJH622/TIL/blob/main/algorithm/python_grammar/list.md)
+![리스트 주요 메서드](https://github.com/KJH622/TIL/raw/main/algorithm/img/python_grammar/list_04.png)
 
 ```
 a = [1, 2, 3, 3]
