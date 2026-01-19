@@ -9,6 +9,7 @@
 ## 파이썬 문법
 - [자료형](https://github.com/lgb201020/TIL/blob/main/python_grammer/data_type.md)
 - [리스트 자료형](https://github.com/lgb201020/TIL/blob/main/python_grammer/list.md)
+- [문자열과 튜플](https://github.com/lgb201020/TIL/blob/main/python_grammer/string%2Ctuple.md)
 
 
 ## Algorithm
