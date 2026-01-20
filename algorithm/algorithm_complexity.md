@@ -8,7 +8,8 @@
 ## 빅오표기법(Big-O notation)
 - 가장 빠르게 증가하는 항만을 고려하는 표기법으로 계수는 무시한다.
 - 예를 들어 연산 횟수가 $3N^3 + 5N^2 + 1,000,000$인 경우 빅오 표기법에서는 가장 차수가 큰 항만 남기고 계수는 무시하므로 $O(N^3)$로 표현된다.
-![다양한 빅오 표기법](https://github.com/lgb201020/TIL/blob/main/algorithm/img/Big-O.png)
+
+  ![다양한 빅오 표기법](https://github.com/lgb201020/TIL/blob/main/algorithm/img/Big-O.png)
 
 ## 시간 복잡도 계산
 - N개의 데이터 합을 계산하는 경우
