@@ -22,3 +22,4 @@
 - [그리디 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/Greedy_Algorithm.md)
 - [구현: 시뮬레이션과 완전 탐색](https://github.com/lgb201020/TIL/blob/main/algorithm/implementation.md)
 - [DFS & BFS 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/DFS_BFS_algorithm.md)
+- [정렬 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/sort_algorithm.md)
