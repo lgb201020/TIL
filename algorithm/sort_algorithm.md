@@ -310,5 +310,57 @@ for i in range(len(count)): # 리스트에 기록된 정렬 정보 확인
 ![sorting_10](./img/sorting_10.png)
 
 ### 문제 해결 아이디어
+- 핵심 아이디어: 매번 배열 A에서 가장 작은 원소를 골라서, 배열 B에서 가장 큰 원소와 교체한다.
+
+- 가장 먼저 배열 A와 B가 주어지염 A에 대하여 오름차순 정렬, B에 대하여 내림차순 정렬을 한다.
+
+- 이후 두 배열의 원소를 첫 번째 인덱스부터 차례로 확인하면서 A의 원소가 B의 원소보다 작을 때만 교체를 수행한다.
+
+- 이 문제에서 두 배열의 원소가 최대 100,000개까지 입력될 수 있으므로, 최악의 경우 O(NlogN)을 보장하는 정렬 알고리즘을 이용해야 한다.
 
 ### 문제 풀이
+- 나의 풀이
+```
+n, k = map(int, input().split())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+# 함수로 정의해서 풀이한 경우
+def func(k,A,B):
+  A.sort()
+  B.sort(reverse=True)
+
+  for i in range(k):
+    if A[i] < B[i]:
+      A[i], B[i] = B[i], A[i]
+    else:
+      return sum(A)  # 더이상 바꿔치기 연산을 할 필요가 없는 경우
+
+print(func(k,A,B))
+```
+```
+5 3
+1 2 5 4 3
+5 5 6 6 5
+26
+```
+
+- 풀이 답안 예시
+```
+n, k = map(int, input().split())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+A.sort()
+B.sort(reverse=True)
+
+# 첫 번째 인덱스부터 확인하며, 두 배열의 원소를 최대 K번 비교
+for i in range(k):
+  # A의 원소가 B의 원소보다 작은 경우
+  if A[i] < B[i]:
+    A[i], B[i] = B[i], A[i]
+  else:
+    break  # 더이상 바꿔치기 연산을 할 필요가 없는 경우
+
+print(sum(A))
+```
