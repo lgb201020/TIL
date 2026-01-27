@@ -24,3 +24,4 @@
 - [DFS & BFS 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/DFS_BFS_algorithm.md)
 - [정렬 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/sort_algorithm.md)
 - [이진 탐색 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/binary_search.md)
+- [다이나믹 프로그래밍(Dynamic Programming)](https://github.com/lgb201020/TIL/blob/main/algorithm/dynamic_programming.md)
