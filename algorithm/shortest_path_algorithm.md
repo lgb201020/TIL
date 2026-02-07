@@ -499,3 +499,79 @@ print(result)
 
 - 따라서 플로이드 워셜 알고리즘의 총 시간 복잡도는 $O(N^3)$이다.
 - 플로이드 워셜 알고리즘은 노드의 개수가 290개 일때 연산 횟수가 대략 2,500만번으로 파이썬 기준 1초 걸린다.
+
+### <문제> 전보
+#### 문제 설명
+- 어떤 나라에는 **N개의 도시**가 있다. 그리고 각 도시는 보내고자 하는 메시지가 있는 경우, 다른 도시로 전보를 보내서 다른 도시로 해당 메시지를 전송할 수 있다.
+
+- 하지만 X라는 도시에서 Y라는 도시로 전보를 보내고자 한다면, 도시 X에서 Y로 향하는 통로가 설치되어 있어야 한다. 예를 들어 X에서 Y로 향하는 통로는 있지만, Y에서 X로 향하는 통로가 없다면 Y는 X로 메시지를 보낼 수 없다. 또한 통로를 거쳐 메시지를 보낼 때는 일정 시간이 소요된다.
+
+- 어느 날 C라는 도시에서 위급 상황이 발생했다. 그래서 최대한 많은 도시로 메시지를 보내고자 한다. 메시지는 **도시 C에서 출발하여 각 도시 사이에 설치된 통로를 거쳐, 최대한 많이 퍼져나갈 것**이다.
+
+- 각 도시의 번호와 통로가 설치되어 있는 정보가 주어졌을 때, 도시 C에서 보낸 메시지를 받게 되는 도시의 개수는 총 몇개이며 도시들이 모두 메시지를 받는 데까지 걸리는 시간은 얼마인지 계산하는 프로그램을 작성하시오.
+
+#### 문제 조건
+![wire_1](./img/wire_1.png)
+
+#### 문제 해결 아이디어
+- 핵심 아이디어: 한 도시에서 다른 도시까지 **최단 거리 문제**로 치환할 수 있다.
+- 현재 문제에서는 N과 M의 범위가 크기 때문에 우선순위 큐를 활용한 다익스트라 알고리즘을 구현한다.
+- 
+#### 문제 풀이
+- 나의 풀이
+  ```
+  import sys
+  import heapq
+  input = sys.stdin.readline
+  INF = int(1e9)
+
+  n, m, start = map(int, input().split())
+
+  graph = [[] for i in range(n+1)]
+
+  distance = [INF] * (n+1)
+
+  for _ in range(m):
+      a, b, c = map(int, input().split())
+      graph[a].append((b,c))
+
+  def dijkstra(start):
+      q = []
+      cnt = 0
+      heapq.heappush(q, (0, start))
+      distance[start] = 0
+
+      while q:
+          dist, now = heapq.heappop(q)
+          if distance[now] < dist:
+              continue
+          else:
+              cnt += 1
+          for i in graph[now]:
+              cost = dist + i[1]
+              if cost < distance[i[0]]:
+                  distance[i[0]] = cost
+                  heapq.heappush(q,(cost, i[0]))
+                  
+      return cnt - 1
+
+  print(dijkstra(start), max(distance[1:n+1]))
+  ```
+  - n과 m이 각각 최대 30,000과 200,000이므로 플로이드 워셜 알고리즘이 아닌 다익스트라 알고리즘을 사용
+  - 방문처리 할 때, cnt에 1을 더한다.
+  - 처음 start 노드를 방문처리 하므로 문제로 보자면 C도시를 방문하는 것과 같으니 cnt-1을 return값으로 한다.
+  - 풀이 예시는 count를 dijkstra 함수 밖에 따로 만들어서 따로 계산한다. 근데 따로 밖에서 for문으로 반복하며 count와 max_distance를 계산하나 내가 한 방식으로 구현하나 복잡도는 동일하다.
+
+- 풀이 예시에만 있는 부분
+  ```
+  dijkstra(start)
+
+  count = 0
+  max_distance = 0
+  for i in distance:
+    if i != 1e9:
+      count += 1
+      max_distance = max(max_distance, i)
+
+  print(count-1, max_distance)
+  ```
