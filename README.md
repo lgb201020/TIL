@@ -27,6 +27,7 @@
 - [다이나믹 프로그래밍(Dynamic Programming)](https://github.com/lgb201020/TIL/blob/main/algorithm/dynamic_programming.md)
 - [DP 문제 - LIS 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/LIS_algorithm.md)
 - [최단 경로 알고리즘(다익스트라, 플로이드 워셜 알고리즘)](https://github.com/lgb201020/TIL/blob/main/algorithm/shortest_path_algorithm.md)
+- [기타 그래프 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/other_graph_theory.md)
 
 ## 자료구조
 - [Stack, Queue, 재귀함수](https://github.com/lgb201020/TIL/blob/main/algorithm/data_structure_for_DFS_BFS.md)
