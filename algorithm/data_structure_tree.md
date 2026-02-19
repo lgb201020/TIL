@@ -57,7 +57,7 @@
   - **중위 순회(in-order traverse):** D-B-E-A-F-C-G
   - **후위 순회(post-order traverse):** D-E-B-F-G-C-A
 
-### 트리의 순회 구현
+### 트리의 순회 구현 예시
 ```
 class Node:
   def __init__(self, data, left_node, right_node):
