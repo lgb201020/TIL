@@ -31,6 +31,6 @@
 - [코딩 테스트에 등장하는 기타 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/other_algorithms.md)
 
 ## 자료구조
-- [Stack, Queue, 재귀함수](https://github.com/lgb201020/TIL/blob/main/algorithm/data_structure_for_DFS_BFS.md)
-- [우선순위 큐(Priority Queue), Heap, 완전 이진 트리](https://github.com/lgb201020/TIL/blob/main/algorithm/Priority%20Queue(Heap).md)
-- [트리](https://github.com/lgb201020/TIL/blob/main/algorithm/data_structure_tree.md)
+- [Stack, Queue, 재귀함수](https://github.com/lgb201020/TIL/blob/main/algorithm/data_structure/data_structure_for_DFS_BFS.md)
+- [우선순위 큐(Priority Queue), Heap, 완전 이진 트리](https://github.com/lgb201020/TIL/blob/main/algorithm/data_structure/Priority%20Queue(Heap).md)
+- [트리](https://github.com/lgb201020/TIL/blob/main/algorithm/data_structure/data_structure_tree.md)
