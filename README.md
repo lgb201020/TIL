@@ -35,4 +35,4 @@
 - [Stack, Queue, 재귀함수](https://github.com/lgb201020/TIL/blob/main/algorithm/data_structure_for_DFS_BFS.md)
 - [우선순위 큐(Priority Queue), Heap, 완전 이진 트리](https://github.com/lgb201020/TIL/blob/main/algorithm/Priority%20Queue(Heap).md)
 - [트리 자료구조](https://github.com/lgb201020/TIL/blob/main/algorithm/data_structure_tree.md)
-- [바이너리 인덱스 트리(Binary Indexed Tre)](https://github.com/lgb201020/TIL/blob/main/algorithm/BIT(Binary_Indexed_Tree).md)
+- [바이너리 인덱스 트리(Binary Indexed Tree)](https://github.com/lgb201020/TIL/blob/main/algorithm/BIT(Binary_Indexed_Tree).md)
