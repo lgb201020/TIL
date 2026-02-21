@@ -30,6 +30,7 @@
 - [벨만 포드 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/Bellman-Ford_algorithm.md)
 - [기타 그래프 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/other_graph_theory.md)
 - [코딩 테스트에 등장하는 기타 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/other_algorithms.md)
+- [최소 공통 조상(Lowest_Common_Ancestor) 찾기 알고리즘](https://github.com/lgb201020/TIL/blob/main/algorithm/LCA(Lowest_Common_Ancestor).md)
 
 ## 자료구조
 - [Stack, Queue, 재귀함수](https://github.com/lgb201020/TIL/blob/main/algorithm/data_structure_for_DFS_BFS.md)
