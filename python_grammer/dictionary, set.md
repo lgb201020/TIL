@@ -20,6 +20,7 @@
 - 사전 자료형에서는 key와 value를 별도로 뽑아내기 위한 메서드를 지원한다.
   - key(): key 데이터만 뽑아서 dict_keys객체로 반환하는 메서드
   - value(): value 데이터만 뽑아서 dict_values 객체로 반환하는 메서드
+  - items(): key, value 데이터 쌍을 반환하는 메서드로 보통 for i in data.items()로 쓰임
     ```
     key_list = data.key()
     value_list = data.value()
