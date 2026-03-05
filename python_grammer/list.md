@@ -46,6 +46,11 @@
   # 1부터 9까지의 수들의 제곱 값을 포함하는 리스트
   array = [i*i for i in range(1,10)]
   ```
+- 리스트 초기화 경우 if - else모두 쓰는 경우 아래와 같이 쓸 수 있다.
+  ```
+  [num if num % 2 == 0 else num * 10 for num in range(20)]
+  ```
+
 - 리스트 컴프리헨션은 2차원 리스트를 초기화할 때 효과적이며 N X M 크기의 2차원 리스트를 한번에 초기화 해야 할 때 매우 유용하다.
     ``` 
     array = [[0] * m for i in _ range(n)]

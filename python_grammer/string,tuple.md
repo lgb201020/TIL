@@ -33,6 +33,7 @@
   - str2 in str1과 같이 str1 문자열 안에 str2문자열이 있다면 True, 없다면 False를 반환할 것이다.
   - str1 = "ab`6CD`E443fgh22iJKlmn1o", str2 = "6CD"	일 때, str2 in str1는 True를 반환한다.
 - replace 메서드: 문자열.replace(타겟 문자, 대체할 문자)형식으로 사용하며 문자열 내 타겟 문자를 다른 문자로 대체할 때 쓴다.
+  - 이때 vowels = ['a','e','i','o','u'], my_string = my_string.replace(vowel, '')로 써도 가능하다.
 ## 튜플 자료형
 - 튜플 자료형은 리스트와 유사하나 다음과 같은 문법적 차이가 있다.
   - ***튜플은 한 번 선언된 값을 변경할 수 없다.***
